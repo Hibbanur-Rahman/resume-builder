@@ -1,0 +1,385 @@
+<html>
+<html lang="en">
+<title>Resume Builder</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+<!-- <link rel="stylesheet" href="/path/to/font-awesome/css/font-awesome.min.css"> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/fontawesome.min.js"
+    integrity="sha512-c41hNYfKMuxafVVmh5X3N/8DiGFFAV/tU2oeNk+upk/dfDAdcbx5FrjFOkFhe4MOLaKlujjkyR4Yn7vImrXjzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<link href="./style.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="./show.css">
+</head>
+
+<body>
+    <div class="main-container" id="main-container">
+        <div class="personal-details" id="personal-details">
+            <h3>Personal Details</h3>
+            <div class="row">
+                <div class="input-details">
+                    <p>Wanted Job Title</p>
+                    <input type="text" placeholder="e.g. Teacher" required id="job" />
+                </div>
+                <div class="input-photo">
+                    <div class="photo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p>Upload photo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-details">
+                    <p>First Name</p>
+                    <input type="Name" placeholder="Hibbanur" id="NameFirst" required />
+                </div>
+                <div class="input-details">
+                    <p>Last Name</p>
+                    <input type="Name" placeholder="Rahman" id="NameLast" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-details">
+                    <p>Email</p>
+                    <input type="email" placeholder="hibban@gmail.com" required id="email" />
+                </div>
+                <div class="input-details">
+                    <p>Phone</p>
+                    <input type="mobile" placeholder="+91-9973152523" required id="number" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-details">
+                    <p>Country</p>
+                    <input type="country" placeholder="India" required id="country" />
+                </div>
+                <div class="input-details">
+                    <p>City</p>
+                    <input type="city" placeholder="Darbhanga" required id="city" />
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="professional">
+            <h3>professional Summary</h3>
+            <p>Write 2-4 short & energetic sentences to interest the reader! Mention your role, experience & most
+                importantly - your biggest achievements, best qualities and skills.</p>
+            <textarea col="30" row="20"
+                placeholder="e.g. Passionate science teacher with 8+ years of experience and track record of.."
+                id="professionalDescription"></textarea>
+        </div>
+
+
+        <div class="education">
+            <h3>Education</h3>
+            <p>A varied education on your resume sums up the value that your learnings and background will bring to job.
+            </p>
+            <div class="education-details">
+                <div class="row">
+                    <div class="input-details">
+                        <p>School</p>
+                        <input type="Text" placeholder="" id="school" required />
+                    </div>
+                    <div class="input-details">
+                        <p>Degree</p>
+                        <input type="Text" placeholder="B.Tech" id="degree" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-details">
+                        <p>Start & End date</p>
+                        <input type="Text" placeholder="MM/YY" id="startDate" required />
+                        <input type="Text" placeholder="MM/YY" id="endDate" required />
+                    </div>
+                    <div class="input-details">
+                        <p>City</p>
+                        <input type="text" placeholder="" id="ecity" />
+                    </div>
+                </div>
+                <textarea name="education-description" id="eDescription" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+
+
+        <div class="social-links">
+            <h3>Websites & Social Links</h3>
+            <p>you can add links to websites you want hiring managers to see! Perhaps it will be a link to your
+                portfolio,LinkedIn profile, or personal website</p>
+            <div class="input-social">
+                <div class="input-details">
+                    <p>Label</p>
+                    <input type="Text" placeholder="facebook" id="degree" />
+                </div>
+                <div class="input-details">
+                    <p>Link</p>
+                    <input type="Text" placeholder="www.facebook.com" id="degree" />
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h3>Skills</h3>
+            <p>Choose 5 important skills that show you fit the position. Make sure they match the key skills mentioned
+                in the job listing( espsecially when applying via an online system).</p>
+            <div class="on-off">
+                <i class="fa-solid fa-toggle-on"></i>
+                <p>Don't show experience level</p>
+            </div>
+            <div class="skills-list">
+                <div class="list-item">
+                    <p>Communication Skills</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Ability to Work in a Team</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Microsoft Excel</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Customer Service</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Microsoft PowerPoint</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Ability to Work Under Pressure</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Computer Skills</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Communication</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Communication</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Adobe Photoshop</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+                <div class="list-item">
+                    <p>Adaptability</p>
+                    <i class="fa-duotone fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+<!-- ======================================= show Main start ============================================================== -->
+    <div class="show-main" id="show-main">
+        <div class="heading">
+            <div class="heading-left">
+                <h2 id="name-show">HIBBANUR RAHMAN</h2>
+                <p id="job-show">Student</p>
+                <p id="description-show">passionate about coding , learning web development , good problem
+                    solving skill. Pursuing bachelor in engineering focus on computer
+                    science from MANUU, Hyderabad
+                </p>
+            </div>
+            <div class="heading-right">
+                <div class="heading-right-icons">
+                    <p id="email-show">hibbanrahmanhyt@gmail.com</p>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="heading-right-icons">
+                    <p id="number-show">+91-9973152523</p>
+                    <i class="fa-solid fa-mobile"></i>
+                </div>
+                <!-- <div class="heading-right-icons">
+                    <p>Darbhanga,Darbhanga,India</p>
+                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                </div> -->
+                <div class="heading-right-icons">
+                    <p id="linkedin-show">linkedin.com/in/hibbanur-rahman-826864231</p>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="heading-right-icons">
+                    <p id="github-show">github.com/Hibbanur-Rahman</p>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main-contents">
+            <div class="left">
+                <div class="education-show">
+                    <div class="head-title">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="education-list">
+                        <h3>B.TECH</h3>
+                        <p>Maulana Azad National Urdu University</p>
+                        <div>
+                            <p><i>10/2021-Present</i></p>
+                            <p><i>Hyderabad,Telangana</i></p>
+                        </div>
+                        <p><i>8.74 CGPA</i></p>
+                        <p>- Computer Science</p>
+
+                    </div>
+                    <div class="education-list">
+                        <h3>12th Board</h3>
+                        <p>Al-Irfan Residential School</p>
+                        <div>
+                            <p>05/2019-07/2021</p>
+                            <p>Aurangabad,Maharastra</p>
+                        </div>
+                        <p>85%</p>
+                        <p>- CBSE(PCM)</p>
+
+                    </div>
+                    <div class="education-list">
+                        <h3>10th Board</h3>
+                        <p>M.K.J High School</p>
+                        <div>
+                            <p>05/2018-05/2019</p>
+                            <p>Darbhanga,Bihar</p>
+                        </div>
+                        <p>76.2%</p>
+                        <p>- BSEB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="show-skills">
+                    <div class="head-title">
+                        <h3>SKILLS</h3>
+                    </div>
+                    <div class="show-skills-list">
+                        <div class="show-skills-item">
+                            <button>C</button>
+                        </div>
+                        <div class="show-skills-item">
+                            <button>Python</button>
+                        </div>
+                        <div class="show-skills-item">
+                            <button>Java</button>
+                        </div>
+                        <div class="show-skills-item">
+                            <button>HTML</button>
+                        </div>
+                        <div class="show-skills-item">
+                            <button>CSS</button>
+                        </div>
+                        <div class="show-skills-item">
+                            <button>Java Script</button>
+                        </div>
+                        <div class="show-skills-item">
+                            <button>Data Structure</button>
+                        </div>
+                        <div class="show-skills-item">
+                            <button>Competitive Programing</button>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="projects">
+                    <div class="head-title">
+                        <h3>PERSONAL PROJECTS</h3>
+                    </div>
+                    <div class="projects-content">
+                        <p>Payment Gateway of Integration on HTML file</p>
+                        <p>- a simple website where the donate button is display and user can donate and the invoice is
+                            generated.</p>
+                        <p>- https://github.com/Hibbanur-Rahman/WEB.git</p>
+                    </div>
+                    <div class="projects-content">
+                        <p>Diffraction grating animation using C</p>
+                        <p>- Diffraction Grating of light waves animation using the c languauge</p>
+                        <p>- https://github.com/Hibbanur-Rahman/diffraction_grating_using- _single_apperature.git
+                        </p>
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <div class="head-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="certificate-list">
+                        <p>Course Certificate (04/2022 - Present)</p>
+                        <p>HTML certificate obtain from Sololearn</p>
+                        <p>https://www.sololearn.com/certificates/CT-FU32KIAF</p>
+                    </div>
+                    <div class="certificate-list">
+                        <p>Course Certificate (05/2022 - Present)</p>
+                        <p>C certificate obtain from sololearn</p>
+                        <p>https://www.sololearn.com/certificates/CT-HNQOQTSK</p>
+                    </div>
+                    <div class="certificate-list">
+                        <p>Course Certificate (10/2022 - Present)</p>
+                        <p>Python certificate obtain from SOLOLEARN</p>
+                        <p>https://www.sololearn.com/certificates/CT-EY7VZPPG</p>
+                    </div>
+                    <div class="certificate-list">
+                        <p>Course Certificate (10/2022 - Present)</p>
+                        <p>This Certificate is Obtain From Devtown after Successful 7-Days Boot Camp</p>
+                        <p>https://cert.devtown.in/verify/ZqCL8c</p>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <div class="head-title">
+                        <h3>LANGUAGES</h3>
+                    </div>
+                    <div class="language-list">
+                        <p>English</p>
+                        <p>Full Professional Proficiency</p>
+                    </div>
+                    <div class="language-list">
+                        <p>Hindi</p>
+                        <p>Full Professional Proficiency</p>
+                    </div>
+                    <div class="language-list">
+                        <p>Urdu</p>
+                        <p>Full Professional Proficiency</p>
+                    </div>
+                </div>
+
+                <div class="interest">
+                    <div class="head-title">
+                        <h3>INTERESTS</h3>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="generatePDF1()">Generate the pdf</button>
+    <button onclick="showdata()">show data</button>
+    <div class="details-demo" id="details-demo">
+        <div id="demo"></div>
+    </div>
+    <script src="./js/jsPDF-2.5.1/dist/jspdf.umd.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/fontawesome.min.js"
+        integrity="sha512-c41hNYfKMuxafVVmh5X3N/8DiGFFAV/tU2oeNk+upk/dfDAdcbx5FrjFOkFhe4MOLaKlujjkyR4Yn7vImrXjzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+
+</html>

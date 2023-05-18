@@ -1,0 +1,111 @@
+.show-main{
+    width: 60%;
+    margin: auto;
+    font-family:sans-serif;
+    padding: 10px;
+}
+.heading{
+    display: flex;
+}
+.heading .heading-left{
+    width: 60%;
+}
+.heading .heading-right{
+    width: 40%;
+}
+.heading .heading-left h2{
+    color: rgb(41, 50, 63);
+    font-size: 34px;
+}
+.heading .heading-right div{
+    display: flex;
+    padding-top: 10px;
+    text-align: right;
+    justify-content: right;
+}
+.heading .heading-right div p{
+    margin-right: 10px;
+    font-size: 13px;
+}
+#job-show{
+    color:grey;
+    font-size: 18px;
+}
+.main-contents{
+    display: flex;
+    width: 100%;
+    padding-top: 60px;
+}
+.main-contents .left,.right{
+    width: 50%;
+}
+.education-show{
+    width: 100%;
+}
+.head-title{
+    border-top: 3px solid rgb(41, 50, 63);
+    border-bottom: 3px solid rgb(41, 50, 63);
+    color: rgb(41, 50, 63);
+    width: 32%;
+    font-size: 20px;
+}
+.education-list{
+    padding-top: 20px;
+    width: 100%;
+}
+.education-list h3{
+    font-size: 20px;
+}
+.education-list p:nth-child(2){
+    font-size: 18px;
+    line-height: 25px;
+}
+.education-list div:nth-child(3){
+    display: flex;
+}
+.education-list div:nth-child(3) p{
+    font-size: 13px;
+    font-family: 'italic',sans-serif;
+    color: grey;
+    line-height: 20px;
+}
+.education-list div:nth-child(3) p:nth-child(2){
+    text-align: right;
+    justify-items: right;
+    width: 63%;  
+}
+.education-list p:nth-child(4){
+    font-size: 13px;
+    font-family: 'italic',sans-serif;
+    color: grey;
+    line-height: 20px;
+}
+
+
+/* .right{
+    
+} */
+
+.right .show-skills{
+    width: 100%;
+}
+.show-skills .head-title{
+    width: 19%;
+}
+.show-skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.show-skills .show-skills-item button{
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    background-color:rgb(152,157,166);
+    color: white;
+}
