@@ -109,3 +109,97 @@
     background-color:rgb(152,157,166);
     color: white;
 }
+
+.projects{
+    width: 100%;
+
+}
+.projects .head-title{
+    width: 59%;
+    margin-bottom: 10px;
+}
+.projects-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.projects-content p{
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.projects-content p:nth-child(1){
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.certificate{
+    width: 100%;
+}
+.certificate .head-title{
+    width: 29%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.certificate-list{
+    padding-bottom: 10px;
+}
+.certificate-list p{
+    font-size:14px ;
+    margin-bottom: 5px;
+    color: grey;
+}
+.certificate-list p:nth-child(1){
+    font-size: 20px;
+    color: black;
+}
+.language{
+    width: 100%;
+}
+.language .head-title{
+    width: 34%;
+}
+.langauage-lists{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+.language-list{
+    margin-right: 46px;
+    padding-top: 10px;
+    padding-bottom:10px ;
+}
+.language-list p{
+    font-size: 14px;
+    color: grey;
+   
+}
+.language-list p:nth-child(1){
+    font-size: 20px;
+    color: black;
+    margin-bottom: 5px;
+}
+.language-list p:nth-child(2){
+    font-style: italic;
+}
+
+.interest{
+    width: 100%;
+}
+.interest .head-title{
+    width: 30%;
+}
+.interest-items{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.interest-items button{
+    width: auto;
+    background: none;
+    font-size: 16px;
+    padding: 7px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
